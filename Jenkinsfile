@@ -27,7 +27,7 @@ pipeline {
                 sh 'python3 -m pytest --cov=. --cov-report xml:test-results/coverage.xml --junitxml=test-results/pytest-report.xml'
             }
         }
-        /*stage('Sonarqube analiysis'){
+        stage('Sonarqube analiysis'){
             steps{
                 
                 withSonarQubeEnv('SonarQube') {
@@ -38,7 +38,7 @@ pipeline {
                 }
             }
             
-        }*/
+        }
         stage('Build image'){
             steps{
                 script{
