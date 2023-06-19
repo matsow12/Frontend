@@ -48,7 +48,7 @@ pipeline {
             steps{
                 script{
                     dockerTag ="RC-${env.BUILD_ID}.${env.GIT_COMMIT.take(7)}"                    
-                    applicationImage = docker.build("$imageName:dockerTag",".")
+                    applicationImage = docker.build("$imageName:$dockerTag",".")
                 }
             }
         }
