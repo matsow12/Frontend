@@ -2,7 +2,7 @@
 def dockerRegistry="https://192.168.44.44:8082"
 def registryCredentials="artifactory"
 def dockerTag=""*/
-def imageName="matsow12/backend"
+def imageName="matsow12/frontend"
 def dockerRegistry=""
 def registryCredentials="docker_hub"
 def dockerTag=""
